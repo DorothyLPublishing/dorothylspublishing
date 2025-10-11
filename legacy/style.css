@@ -14,6 +14,38 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.8;
+
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.book-card {
+  background: white;
+  border: 1px solid #FFDD54;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.book-card h3 {
+  color: #1E3A5F;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 0.95em;
+  color: #333;
+}
 }
 
 .main {
