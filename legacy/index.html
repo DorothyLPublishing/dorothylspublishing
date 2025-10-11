@@ -5,6 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Legacy Standard in Indigenous Literature and Thought</title>
 <link rel="stylesheet" href="style.css">
+  .book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.book-card {
+  background: white;
+  border: 1px solid #FFDD54;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.book-card h3 {
+  color: #1E3A5F;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 0.95em;
+  color: #333;
+}
+
 </head>
 <body>
 <div class="main">
@@ -32,5 +63,45 @@
     <span>(Embossed Gold Signature Placeholder with Legacy Seal Watermark)</span>
   </div>
 </div>
+      <!-- Legacy Reading List -->
+    <h2>Legacy Reading List</h2>
+    <p>
+      At Dorothy L’s Publishing, we believe legacy is not inherited — it is cultivated.  
+      These works have been selected as entry points into Overstanding — the practice of seeing ourselves and our stories in full dimension.  
+      This list will grow as I read, learn, and evolve — and I invite you to journey with me as we build together.  
+      — Dorothy L. Reddick
+    </p>
+
+    <div class="book-list">
+      <div class="book-card">
+        <h3>Four Hundred Souls</h3>
+        <p><strong>By Ibram X. Kendi & Keisha N. Blain</strong></p>
+        <p>A sweeping anthology of collective Black history, told through hundreds of voices — a reminder that progress is both personal and shared.</p>
+      </div>
+
+      <div class="book-card">
+        <h3>Negroland: A Memoir</h3>
+        <p><strong>By Margo Jefferson</strong></p>
+        <p>A lyrical and incisive look at class, race, and belonging within the Black upper class — essential reading for legacy bearers.</p>
+      </div>
+
+      <div class="book-card">
+        <h3>The Black Atlantic</h3>
+        <p><strong>By Paul Gilroy</strong></p>
+        <p>A foundational exploration of identity, culture, and migration across the African diaspora — art, voice, and purpose within the global Black continuum.</p>
+      </div>
+
+      <div class="book-card">
+        <h3>All God’s Children Need Traveling Shoes</h3>
+        <p><strong>By Maya Angelou</strong></p>
+        <p>Angelou’s reflections in Ghana on home, diaspora, and belonging — a tender companion for anyone tracing roots and building branches.</p>
+      </div>
+
+      <div class="book-card">
+        <h3>The Practice of Diaspora</h3>
+        <p><strong>By Brent Hayes Edwards</strong></p>
+        <p>How translation and transnational exchange shaped Black internationalism — for readers interested in the mechanics of cultural conversation.</p>
+      </div>
+    </div>
 </body>
 </html>
